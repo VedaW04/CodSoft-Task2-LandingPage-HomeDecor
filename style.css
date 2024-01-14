@@ -1,207 +1,293 @@
-
-body{
-    margin: 0px;
+body {
+    margin:0px;
     padding: 0px;
-    width: 98.8vw;
-    background-color: #F1EAFF;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
 }
 #navbar {
     position: fixed;
     width: 100vw;
-}
-.CV {
-    padding: 10px;
-    border: 1px solid #756AB6;
-    border-radius: 20px;
-    margin: 15px;
-}
-.CV:hover {
-    background-color: #756AB6;
-    color: white;
+    z-index: 1000;
 }
 .nav-container-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
+    height: 60px;
     width: 100vw;
-    height: 70px;
-    background-color: #756AB6;
+    justify-content: space-around;
+    background-color: #597E52;
 }
-.nav-flex1 {
+.nav-container-flex1 {
     display: flex;
-    height: 70px;
     justify-content: left;
-    gap: 20px;
     align-items: center;
+    background-color: #597E52;
+    
 }
-.nav-flex2 {
+.nav-container-flex2 {
     display: flex;
-    height: 70px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    background-color:#597E52 ;
 }
-.logo {
-    margin-left: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #FFE5E5;
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px ;
+    text-decoration: none;
+    border: 1px solid #597E52;
+    border-radius: 10px;
+    color:white ;
+}
+a.button:hover {
+    border-color:#D2E3C8 ;
+    background-color:#D2E3C8 ;
+    color: black;
 }
 .nav-items {
-    text-decoration: none;
-    color: white;
-    font-size: x-large;
+    font-family: 'Inter', sans-serif;
 }
-.nav-items:hover {
-    color: black;
+.nav-logo {
+    height: 50px;
+    margin-left: 10px;
+    align-self: center;
+    border-radius: 50%;
 }
-.home-grid {
+.nav-heading {
+    font-family: 'Playfair Display', serif;
+    margin-left: 10px;
+    
+}
+#nav-home {
+    padding-top: 60px;
+}
+.homepage-container-grid {
     display: grid;
-    padding-top: 70px;
-    width: 80%;
-    margin-left: 10%;
     grid-template-columns: 1fr 1fr;
-    height: 90vh;
-}
-.inner-grid1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
+    grid-template-rows: 1fr;
     align-items: center;
+    height: 120vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://images.zadinteriors.com/blog/2020/02/Simple-and-Affordable-Home-Decor-Ideas.jpg?scale.option=fill&scale.width=772&scale.height=483');
 }
-.inner-grid2 {
+.homepage-innergrid {
     display: grid;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(1fr,8 );
+    grid-template-rows: 1fr 1fr ;
+    gap: 0px;
+    font-family: 'Playfair Display', serif;
+    
 }
-.myimage {
-    height: 450px;
-    width: 370px;
-    border-radius: 100px;
+.tagline1 {
+    grid-area: 1/2/2/9 ;
+    font-size: xx-large;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
-
-.inner-grid1 h2 {
-    margin-top: 50%;
+.tagline2 {
+    grid-area: 2/2/3/9;
     font-size: xx-large;
-    font-weight: bolder;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
-.inner-grid1 button {
+.tagline3 {
+    grid-area: 3/3/4/9 ;
     font-size: x-large;
-    background-color: white;
-    width: 200px;
-    border: 2px solid #756AB6;
+    font-family: 'Inter', sans-serif;
 }
-.heading {
+.shopnow-button {
+    grid-area:4/4/5/6 ;
+    display: inline;
+    border: 1px solid #D2E3C8;
+    background-color: #D2E3C8;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: larger;
+    padding: 10px;
+}
+.shopnow-button:hover {
+    background-color: #597E52;
+    border: 1px solid #597E52;
+    color: white;
+}
+.aboutus {
+    display: inline-block;
+    width: 100vw;
+    background-color: #D2E3C8;
+}
+.aboutus img {
+    float:left;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: 8%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-right:3% ;
+
+}
+.about-text {
+    margin-right: 15%;
+    margin-left: 15%;
+    font-family: 'Inter', sans-serif;
+    font-size: larger;
+}
+.about-heading {
+    margin-top: 10%;
+    font-size: xx-large;
+    text-decoration: underline;
+    
+}
+.shop-by-category, .whats-new, .contact {
     text-align: center;
     font-size: xx-large;
-    color: #756AB6;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    
+    
+}
+.category-grid {
+    display: grid;
+    width: 80%;
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+}
+.category-card {
+    border-radius: 20px;
+    border: 1px solid #dadada;
+}
+.category-card:hover {
+    border: 1px solid #dadada;
+    background-color: #dadada;
+}
+.category-image {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.category-name {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+}
+.category-card-diff {
+    border-radius: 20px;
+    border: 1px solid #dadada;
+}
+.category-card-diff:hover{
+    background-color: #dadada;
 }
 
-.about-image {
-    border-radius: 50%;
-    float: right;
-    margin: 20px;
-}
-#about-section{
-    height: 450px;
-    font-size: 20px;
-}
-.about{
-    padding: 20px;
-}
-#skill-section{
-    height: 600px;
-}
-.skills-grid{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-.skills-grid h2{
-    font-size: x-large;
-    color: #716b8f;
-}
-.skills{
+.category-card-diff > p {
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 30%;
+    text-decoration: underline;
+    color: blue;
     font-size: large;
+    font-family: 'Inter', sans-serif;
 }
-.project-grid{
-    height: 650px;
-}
-.project{
-    display: flex;
-    padding: 20px;
-}
-.project img{
-    width: 500px;
-}
-.content{
-    margin-left: 30px;
-}
-.content a{
-    font-size:larger;
-    text-decoration: none;
-    padding: 5px 15px 5px 15px;
-    border-radius: 10px;
-    background-color: greenyellow;
-    color: black;
-}
-.content p{
-    font-size: larger;
-    text-align: justify;
-}
-#contact-section{
-    height: 500px;
-}
-.contact-grid{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-}
-.contact-grid input, textarea{
-    margin: 10px;
-    padding: 10px;
-    width: 600px;
-    border-radius: 20px;
-    border: 2px solid #756AB6;
-}
-.contact-grid textarea{
-    height: 200px;
-}
-.contact-grid button{
-    border-radius: 10px;
-    padding: 10px 20px 10px 20px;
-    background-color: white;
-    border: 2px solid #756AB6;
-    margin-bottom: 20px;
-}
-.contact-grid button:hover{
-    background-color: #756AB6;
-    color: #ffff;
-    border: none;
-}
-#footer{
-    padding-top: 20px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #756AB6;
-}
-#footer i{
-    font-size: 25px;;
-}
-#footer p{
-    font-size: 20px;
-    font-weight: 700;
-    margin: 5px;
-}
-#footer .copyright{
-    font-size: 15px;
+.discover {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
     font-weight: normal;
-    margin: 5px;
+    font-size: x-large;
+    margin: 0px;
+    padding: 24px;
 }
+.trends-grid {
+    display: grid;
+    width: 80%;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    
+}
+.trends-card {
+    border-radius: 10px;
+    background-color: #D2E3C8;
+}
+.trends-image {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.trends-text {
+    text-align: left;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Inter', sans-serif;
+    background-color: #D2E3C8;
+}
+.trends-view {
+    display: inline;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    background-color: yellow;
+}
+.trends-view:hover {
+    background-color: lightyellow;
+}
+.contact {
+    background-color: #86A789;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    width: 100vw;
+    margin-bottom: 0px;
+}
+.footer-column {
+    display: flex;
+    background-color: #4F6F52;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-around;
+}
+.col-1 {
+    align-self: center;
+}
+.col-1 h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.copyright {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 3px;
+}
+
+
